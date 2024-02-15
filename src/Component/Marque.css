@@ -1,0 +1,20 @@
+.news {
+   float: center;
+   overflow: hidden;
+   border-radius: 4px;
+   padding: 1px;
+   -webkit-user-select: none;
+   float: left;
+   padding: 9px;
+   position: relative;
+   top: 1%;
+   font: 16px 'Raleway', Helvetica, Arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -webkit-user-select: none;
+   cursor: pointer;
+   background-color: #edeff1;
+   color: #28293a;
+   width: 98.8vw;
+   margin-top: -12px;
+   text-transform: uppercase;
+}

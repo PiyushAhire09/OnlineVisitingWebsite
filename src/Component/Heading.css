@@ -1,0 +1,34 @@
+
+h3{
+    text-align:center;
+    margin-top:10px;
+}
+
+h4{
+text-align:center;
+margin-top:-10px;
+}
+
+h5{
+color:red ;
+text-align:center; 
+margin-top:-15px;
+}
+
+/* .heading_logo{
+ padding:0px;
+ margin-top:-10px;
+} */
+
+
+.chennailogo {
+    position: absolute;
+    top: 20px; /* Adjust the value as needed */
+    right: 15px; /* Adjust the value as needed */
+  }
+
+.cdaclogo {
+    position: absolute;
+    top: 0px; /* Adjust the value as needed */
+    left: 0px; /* Adjust the value as needed */
+  }
