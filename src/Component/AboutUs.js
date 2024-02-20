@@ -7,7 +7,7 @@ function AboutUs() {
         <>
             {/* <h1>About Us</h1> */}
             <div className="Aboutcontainer">
-                <h2>InfinityTech College of Computer Engineering (ITSC)</h2>
+                <h2>InfinityTech School of Computer Engineering (ITSC)</h2>
                 <hr />
                 <div className="clgimages">
                     <img src={collegeimg} alt="CollegePhoto"/>
@@ -15,7 +15,7 @@ function AboutUs() {
 
                 <div className="Aboutcontainer purple-container">
 
-                    <p><b>InfinityTech College of Computer Engineering (ITSC)</b> is a premier institution dedicated to providing high-quality education and training in the field of computer engineering.</p>
+                    <p><b>InfinityTech School of Computer Engineering (ITSC)</b> is a premier institution dedicated to providing high-quality education and training in the field of computer engineering.</p>
                     <p>Established with a vision to nurture future technocrats and innovators, ITSC offers a comprehensive curriculum designed to equip students with the necessary skills and knowledge to excel in the rapidly evolving technology industry.</p>
                     <p>Our institution prides itself on a faculty comprised of experienced professionals and experts in the field who are committed to fostering a dynamic learning environment.</p>
                     <p>Through a combination of theoretical instruction and hands-on practical experience, we aim to empower our students to tackle real-world challenges and contribute meaningfully to the field of computer engineering.</p>

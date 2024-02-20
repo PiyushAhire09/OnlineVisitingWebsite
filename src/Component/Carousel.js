@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-// import corisal2 from './corisal2.jpg';
 import coriasal3 from './coriasal3.jpg';
 import corisal4 from './corisal4.jpg';
 import corisal5 from './corisal5.webp';
 import corisal6 from './corisal6.jpg';
-// import Any from './Any.jpg';
 import img1 from './img1.jpg'
 import "./Carousel.css";
 
@@ -36,11 +34,10 @@ function Carousel() {
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev" onClick={() => handleSelect(index === 0 ? 4 : index - 1)}>
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        {/* <span className="visually-hidden">Previous</span> */}
       </button>
       <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next" onClick={() => handleSelect(index === 4 ? 0 : index + 1)}>
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        {/* <span className="visually-hidden">Next</span> */}
+      
       </button>
     </div>
   );

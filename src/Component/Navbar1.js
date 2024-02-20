@@ -2,17 +2,18 @@ import "./Navbar1.css";
 import React, { useState, useRef , useEffect } from 'react';
 
 const Navbar1 = ({onClick}) => {
-  const [showStudentsDropdown, setShowStudentsDropdown] = useState(false);
+  const [showStudentsDropdown, setShowStudentsDropdown] = useState(false); // initialized as false, indicating that the dropdowns are initially hidden.
   const [showPlacementDropdown, setShowPlacementDropdown] = useState(false);
-  const selectorRef = useRef(null);
+
+  const selectorRef = useRef(null);  // for student dropdown 
   const dropdownRef = useRef(null);
   
-  const selectorRef1 = useRef(null);
+  const selectorRef1 = useRef(null);  // for placement dropdown
   const dropdownRef1 = useRef(null);
 
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (
+  useEffect(() => {  // 2 useEffect hooks are used to handle clicks outside the dropdown menus:
+    function handleClickOutside(event) { // The first useEffect listens for clicks outside the Students 
+      if (                               // dropdown menu and closes it if clicked outside.
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target) &&
         !selectorRef.current.contains(event.target)
@@ -27,7 +28,7 @@ const Navbar1 = ({onClick}) => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [showStudentsDropdown]);
 
-  useEffect(() => {
+  useEffect(() => {     // The second useEffect does the same for the Placement Record dropdown menu.         
     function handleClickOutside(event) {
       if (
         dropdownRef.current &&
@@ -45,11 +46,11 @@ const Navbar1 = ({onClick}) => {
   }, [showPlacementDropdown]);
 
 
-  const toggleStudentsDropdown = () => {
+  const toggleStudentsDropdown = () => { //toggleStudentsDropdown:Toggles the visibility of the Students dropdown menu.
     setShowStudentsDropdown(!showStudentsDropdown);
   };
 
-  const togglePlacementDropdown = () => {
+  const togglePlacementDropdown = () => { //togglePlacementDropdown:Toggles the visibility of the Placement dropdown 
     setShowPlacementDropdown(!showPlacementDropdown);
   };
   return (
@@ -87,7 +88,6 @@ const Navbar1 = ({onClick}) => {
 
             <li>
             <a className="navbar-brand courses"  onClick ={() => onClick("Courses")} > &nbsp;&nbsp; Courses </a>
-            
             <a className="navbar-brand aboutUs"  onClick ={() => onClick("AboutUs")} > &nbsp; About Us </a>
             <a className="navbar-brand contactUs"   onClick ={() => onClick("ContactUs")} > &nbsp; Contact Us </a>
             </li>

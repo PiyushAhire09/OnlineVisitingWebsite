@@ -3,7 +3,7 @@ import  "./Marque.css";
 function Marque(){
     return(
         <>
-        <marquee className="news" scrollamount="10px"> CONGRATULATION ON GETTING ADMMITED IN Infinity Tech College Of Computer Engineering</marquee>
+        <marquee className="news" scrollamount="10px"> CONGRATULATION ON GETTING ADMMITED IN Infinity Tech School Of Computer Engineering</marquee>
         </>
     )
 }
